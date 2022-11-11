@@ -1,7 +1,7 @@
 
 # A Novel Method for Handwritten Digit Recognition System
 
-An WebApp which recognize the handwritten digit image and show the predicted results.
+An WebApp which recognize digit from the handwritten digit image and show the predicted results.
 
 
 ## Project Description

@@ -1,5 +1,5 @@
 
-# Handwritten Digit Recognizer
+# ✇ Handwritten Digit Recognizer
 
 An WebApp which recognize digit from the handwritten digit image and show the predicted results.
 

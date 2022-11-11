@@ -1,5 +1,5 @@
 
-# A Novel Method for Handwritten Digit Recognition System
+# Handwritten Digit Recognizer
 
 An WebApp which recognize digit from the handwritten digit image and show the predicted results.
 

@@ -1,0 +1,8 @@
+flask
+werkzeug
+flask_session
+flask_cors
+requests
+flask_pymongo
+dnspython
+scikit-learn

@@ -1,0 +1,9 @@
+<div class="middle" *ngIf="!load_graph">
+    <mat-progress-spinner mode="indeterminate"  diameter="60" strokeWidth="7" ></mat-progress-spinner>
+</div>
+<canvasjs-chart class="chart" *ngIf="load_graph" [options]="chartOptions" [styles]="{width: '100%', height:'360px'}"></canvasjs-chart>
+
+<div *ngIf="load_graph" class="description">
+  <h2>The Recognized Handwritten Digit from your image is {{pred_value}} 🡺</h2>
+  <img [src]="preview">
+</div>

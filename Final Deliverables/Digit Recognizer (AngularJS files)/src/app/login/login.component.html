@@ -1,0 +1,39 @@
+<div class="entire-login">
+    <mat-card class="mat-elevation-z8">
+        <mat-card-header class="flex-center">
+            <mat-card-title >
+                Welcome Bud!
+            </mat-card-title>
+        </mat-card-header>
+        <mat-card-actions class="flex-center">
+            <mat-button-toggle-group style="margin: auto;" appearance="legacy">
+               <mat-button-toggle value="sign_in" checked="true">Sign in</mat-button-toggle>
+                <mat-button-toggle value="sign_up" disabled="true">Sign up</mat-button-toggle>
+            </mat-button-toggle-group>
+        </mat-card-actions> 
+        <mat-card-content class="card-content">
+            <mat-form-field appearance="outline">
+                <mat-label>Email id</mat-label>
+                <mat-icon matPrefix>perm_identity</mat-icon>
+                <input id="email" name="email" matInput type='email' [formControl]="emailFC" placeholder="" #email/>
+                <mat-error *ngIf="emailFC.hasError('required')">
+                    Email id is required
+                </mat-error>
+                <mat-error *ngIf="emailFC.hasError('email') && !emailFC.hasError('required')">
+                    Valid email id is required
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label >Password</mat-label>
+                <mat-icon matPrefix> vpn_key</mat-icon>
+                <input id="password" name="password" matInput type="password" [formControl]='passwordFC' #password>
+                <mat-error *ngIf="passwordFC.hasError('required')">
+                    Password is required
+                </mat-error>
+            </mat-form-field>
+            <mat-card-actions align="end">
+                <button mat-raised-button color="primary" (click)="val_credentials(email.value,password.value)">Sign in</button>
+            </mat-card-actions> 
+        </mat-card-content>
+    </mat-card>
+</div>

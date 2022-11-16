@@ -1,0 +1,17 @@
+.entire{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    height:85vh;
+    background: #f7f7f7;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mat-card{
+    box-shadow: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}

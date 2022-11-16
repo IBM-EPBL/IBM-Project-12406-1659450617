@@ -1,0 +1,23 @@
+<div class="entire">
+    <mat-card class="card mat-elevation-z8">
+        <mat-card-title style="text-align: center;">Input Field</mat-card-title>
+        <mat-form-field appearance="outline">
+            <input hidden type='file' accept="image/*" #fileclick (change)="select_file($event)" >
+            <input readonly matInput value="{{this.fname}}" placeholder="Choose image file" >
+            <button *ngIf="this.file" matSuffix (click)="deletefile()" matTooltip="Remove File" matTooltipPosition = "above" color="warn" mat-icon-button>
+                <mat-icon>close</mat-icon>
+            </button>
+            <button matSuffix mat-mini-fab color="primary" (click)="fileclick.click()" matTooltip="Select a file" matTooltipPosition="right">
+                <mat-icon>backup</mat-icon>
+            </button>
+        </mat-form-field>
+        <button (click)="predict()" mat-raised-button color="primary" style="min-height: 40px;"> 
+            <span>Predict</span>
+        </button>
+    </mat-card>
+
+    <mat-card class="card mat-elevation-z8" *ngIf="enable_preview">
+        <mat-card-title style="text-align: center;">Preview</mat-card-title>
+        <img [src]="preview">
+    </mat-card>
+</div>

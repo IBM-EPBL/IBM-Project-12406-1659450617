@@ -1,0 +1,21 @@
+.entire-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:85vh;
+    background: #f7f7f7;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+.mat-card{
+    /* background-color: aliceblue; */
+    box-shadow: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
